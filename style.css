@@ -30,18 +30,22 @@ body {
 img {
     max-width: 100%;
 }
+
 .wrapper {
-    display:grid;
+    display: grid;
     grid-gap: 20px;
 }
+
 /*Navigation*/
+
 .main-nav ul {
-   display: grid;
-   grid-gap: 20px;
+    display: grid;
+    grid-gap: 20px;
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(4, 1fr);
 }
+
 .main-nav a {
     background: var(--primary);
     display: block;
@@ -53,7 +57,116 @@ img {
     font-size: 1.1rem;
     box-shadow: var(--shadow);
 }
+
 .main-nav a:hover {
     background: var(--dark);
     color: var(--light);
 }
+
+/* Top container */
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+
+/* Showcase */
+
+.showcase {
+    grid-area: showcase;
+    min-height: 600px;
+    background: url(https://images.unsplash.com/photo-1611955727536-b3799f3c4ab9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1058&q=80);
+    background-size: cover;
+    background-position: center;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--dark);
+    margin-top: 0;
+}
+
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+iframe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.showcase p {
+    flex-grow: 1;
+}
+/* boxes */
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.box{
+    background: var(--primary);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+
+}
+/* info */
+.info{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+}
+/*  portfolio */
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+.portfolio img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+/*  footer */
+footer {
+    margin-top: 2rem;
+    background:  var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+}
+/*  media queries */
+
+
+
+
+
+
+
+
+
+
+
