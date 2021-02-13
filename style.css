@@ -34,6 +34,7 @@ img {
 .wrapper {
     display: grid;
     grid-gap: 20px;
+   padding: 20px;
 }
 
 /*Navigation*/
@@ -43,7 +44,10 @@ img {
     grid-gap: 20px;
     padding: 0;
     list-style: none;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    animation: normal;
+    align-items: center;
+   
 }
 
 .main-nav a {
@@ -57,6 +61,8 @@ img {
     font-size: 1.1rem;
     box-shadow: var(--shadow);
 }
+
+
 
 .main-nav a:hover {
     background: var(--dark);
@@ -169,14 +175,21 @@ footer {
     }
     .main-nav ul {
         grid-template-columns: 1fr;
+        justify-content: center;
+        
+    }
+    .main-nav li img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+    }
     }
     .info {
         grid-template-columns: 1fr;
     }
-}
-#header img {
-    
-}
+
+    }
+
 
 
 
