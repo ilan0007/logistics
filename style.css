@@ -16,8 +16,10 @@ html {
 body {
     background: #ccc;
     line-height: 1.4;
-    align-items: center;
-}
+    display: block;
+   
+    
+}l
 
 .btn {
     background: var(--dark);
@@ -35,6 +37,7 @@ img {
     display: grid;
     grid-gap: 20px;
    padding: 20px;
+   margin: 3%;
 }
 
 /*Navigation*/
